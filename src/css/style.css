@@ -1,0 +1,87 @@
+.imagens-slider{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.imagens-slider .slide{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    transition: 0.5s ease-out;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+}
+.slide.mostrar{
+    opacity: 100%;
+}
+
+.conteudo{
+    background-color: #fff;
+    margin-left: 180px;
+    padding: 65px 60px;
+    width: 620px;
+    height: 700px;
+    border-radius: 10px;
+}
+.conteudo .titulo{
+    margin-bottom: 80px;
+    font-size: 5rem;
+    font-weight: 400;
+}
+.conteudo .texto{
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+.conteudo .botao{
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.botao.vermelho{
+    color: #C50000;
+}
+.botao.amarelo{
+    color: #D9DD10;
+}
+.botao.laranja{
+    color: #A63A17;
+}
+.botao.azul{
+    color: #10ACDD;
+}
+
+.slide1{
+    background: url(../images/imagem1.png);
+}
+.slide2{
+    background: url(../images/imagem2.png);
+}
+.slide3{
+    background: url(../images/imagem3.png);
+}
+.slide4{
+    background: url(../images/imagem4.png);
+}
+
+.seta-voltar, .seta-avancar{
+    position: absolute;
+    z-index: 1;
+}
+.seta-voltar{
+    left: 3%;
+    transform: rotateY(180deg);
+}
+.seta-avancar{
+    right: 3%;
+}
+.opacidade{
+    opacity: 0.6;
+    cursor: default;
+}
